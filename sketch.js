@@ -87,7 +87,8 @@ function keyPressed() {
         image(imgs[randomIndex], 0, 0);
     }
 }
-// 
+// the pixel values of the second image transition between the randomly 
+// selected image and the average image based on the mouseX value
 function mouseMoved() {
   let amount = map(mouseX, 0, width, 0, 1);
   let randomIndex = int(random(imgs.length));
